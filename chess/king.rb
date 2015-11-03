@@ -5,11 +5,15 @@ class King < SteppingPiece
   end
 
   def move_directions
-
+    [[1, 1], [1, -1], [-1, -1], [-1, 1], [1, 0], [-1, 0], [0, 1], [0, -1]]
   end
 
   def to_s
     "K".colorize(color)
+  end
+
+  def to_sym
+    :king
   end
 
 

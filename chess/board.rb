@@ -1,4 +1,4 @@
-require_relative 'requirements'
+require_relative 'board_dependencies'
 
 class Board
   attr_reader :grid
@@ -21,9 +21,9 @@ class Board
 
   def generate_board
     new_board = []
-    current_color = :red
+    current_color = :white
     DEFAULT_BOARD.each_with_index do |row, row_index|
-      current_color = :blue if row_index > 3
+      current_color = :black if row_index > 3
       new_row = []
       row.each_with_index do |piece, col_index|
         new_row << new_piece(piece, [row_index, col_index],current_color)
@@ -77,7 +77,3 @@ class Board
   end
 
 end
-
-
-board = Board.new
-p board.grid

@@ -12,5 +12,9 @@ class Rook < SlidingPiece
     "R".colorize(color)
   end
 
+  def to_sym
+    :rook
+  end
+
 
 end

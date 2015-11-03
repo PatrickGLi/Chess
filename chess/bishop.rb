@@ -11,4 +11,8 @@ class Bishop < SlidingPiece
     "B".colorize(color)
   end
 
+  def to_sym
+    :bishop
+  end
+
 end

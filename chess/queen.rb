@@ -12,4 +12,8 @@ class Queen < SlidingPiece
     "Q".colorize(color)
   end
 
+  def to_sym
+    :queen
+  end
+
 end

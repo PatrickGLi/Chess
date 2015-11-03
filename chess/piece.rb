@@ -19,5 +19,9 @@ class Piece
     "P".colorize(:red)
   end
 
+  def to_sym
+    :piece
+  end
+
 
 end
